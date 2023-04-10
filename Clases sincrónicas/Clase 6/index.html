@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays y dom JavaScript</title>
+    <script src="javaScript.js"></script>
+</head>
+<body>
+    <h1>Bienvenidos a mi clase numero 6</h1>
+
+    <h2>Ejercicio 9</h2>
+    <h3>Divisa converter</h3>
+    <div id="cashConverter">
+        
+        <div id="usdConverter">
+                <form onsubmit="usdAmountEvent(event)">
+                <!-- <label for="argPeso">Ingrese la cantidad de pesos argentinos: </label>
+                <input type="text" id="pesoArg" name="Peso">  no tiene sentido que tenga 2 campos... --> 
+                <label for="usd"> Usd a pesos</label>
+                <input type="text" name="dolares" id="usdAmount">
+                <button type="submit" >Enviar</button>
+                <div name="sellingDollarsResult">
+                    <h1 id= usdConvertionText></h1>
+                </div>
+                
+        </div>
+
+        </form>
+        <div id="pesosConverter">
+            <form onsubmit="pesoAmountEvent(event)">
+                <label for="pesos">Pesos a usd</label>
+                <input type="text" name="" id="pesoAmount">
+                <button type="sumbit" > Vea que tan pobre es</button>
+                </form>
+                <div>
+                    <h1 id= pesosConvertionText></h1>
+                </div>
+
+        </div>
+       
+
+    </div>
+    <div id= "exercise10">
+
+        <div>
+            <form onsubmit="temperatureEvent(event)">
+                <label for="celsius"> Ingrese los grados centigrados para convertirlos en fahrenheit.</label>
+                <input id="celsiusDegree" type="number"> 
+                <button id= degreeButton type="submit"  >Iluminame</button>
+                <p id="degreeSolved"></p>
+            </form>
+            
+           
+        </div>
+
+    </div>
+    
+    <div id=" exercise13">
+        <div id="box">
+            <form onsubmit="boxEvent(event)">
+                <label for="boxOwnerName">Nombre del cliente:</label>
+                <input type="text" id="boxOwnerName"> 
+                <select name="boxMaterial" id="boxMaterialId">
+                    <option value="madera">Madera</option>
+                    <option value="acero">Acero</option>
+                    <option value="plástico">Plástico</option>
+                </select>
+                <input type="radio" id="boxRadioInput_1" value="pequeña" name="size">
+                <label for="boxRadioInput_1">Pequeña</label>
+                <input type="radio" id="boxRadioInput_2" value="mediana" name="size">
+                <label for="boxRadioInput_2">Mediana</label>
+                <input type="radio" id="boxRadioInput_3" value="grande" name="size">
+                <label for="boxRadioInput_3">Grande</label>
+
+                <textarea name="boxText" id="boxTextArea" cols="30" rows="10">Añadir comentario.</textarea>
+              <button  type="sumbit" > Enviar</button>
+              <p id="boxFormSolved"></p>
+            </form>
+
+        </div>
+    </div>
+
+<div id="exercise13">
+    <form onsubmit="gameGuessEvent(event)">
+        <label for="">Estoy pensando un número del 1 al 5, tienes 3 intentos para acertar cual es.</label>
+        <input type="number" id="userChoosenNumber"> Ingrese el número que crea que estoy pensando.
+        <button type="submit">¡ADIVINÉ!</button>
+        <div id="retryGame">
+            <form onsubmit="gameGuessRetryEvent(event)">
+                <input type="number" id="retryGameInput">Intentar de nuevo
+                <button type="submit" name="retry">Enviar</button> 
+
+            
+            
+            </form>
+               
+        </div>
+        
+
+    
+    
+    </form>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
