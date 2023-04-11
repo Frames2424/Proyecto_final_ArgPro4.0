@@ -1,0 +1,217 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.email,
+.password {
+    position: relative;
+}
+
+.image {
+    flex: 1;
+    width:100%;
+}
+
+.input {
+    height: 60px;
+    width: 300px;
+    padding-left: 60px;
+    border-radius: 27px;
+    border: 1px solid #C4C4C4;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+}
+
+
+.email::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    width: 25px;
+    height: 25px;
+    background: url('./images/envelope.svg');
+}
+
+input {
+    padding: 10px 30px;
+}
+
+.password::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    width: 25px;
+    height: 25px;
+    background: url('images/lock.svg');
+}
+
+.login-button {
+    background-color: #E21982;
+    height: 50px;
+    width: 300px;
+    border-radius: 27px;
+    font-size: 16px;
+    border-style: none;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color:white;
+}
+
+.login-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.container-xl {
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot-password {
+    border-style: hidden;
+    background: none;
+    color: #E21982;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.body {
+    /* position: absolute; */
+    background-color: #22193F;
+    display: flex;
+    /* position: relative; */
+    justify-content: center;
+    text-align: center;
+    /* margin: auto; */
+    background-image: url(images/ondas.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.logo-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-container {
+    position: relative;
+}
+
+.login-title {
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #22193F;
+    font-family: 'Nunito', sans-serif;
+    font-weight:900;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.custom-column {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form-size {
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 768px) {
+
+    .image-container {
+        position: relative;
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    .login-title {
+        margin-bottom: 30px;
+    }
+
+    .sub-container {
+        padding: 30px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .container-xl {
+        margin-bottom: 0;
+    }
+    
+    .login-button {
+        margin-bottom: 0;
+    }
+
+    .login-title {
+        margin-bottom: 40px;
+    }
+ 
+    .image-container {
+        height: unset;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .container-xl {
+        margin-bottom: 100;
+    }
+
+    .input {
+        width: 500px;
+    }
+    .login-button {
+        width: 500px;
+    }
+
+    .form-size {
+        margin-bottom: 100px;
+    }
+
+    .login-title {
+        margin-bottom: 100px;
+    }
+
+    .forgot-password {
+        font-size: 16px;
+        position: fixed;
+        margin-left: 50px;
+        margin-bottom: 0;
+    }
+
+    .sub-container {
+        padding: 0;
+    }
+}
