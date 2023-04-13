@@ -1,47 +1,46 @@
-
-
-.imgWallp{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.imgWallp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.imgWallp img{
-    width: 60vw;
-    height: 100%;
+.imgWallp img {
+  width: 60vw;
+  height: 100%;
 }
 
-.footer{
-    margin-top: 5vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.footer {
+  margin-top: 5vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.footer div{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 50vw;
-    flex-direction: column;
-    padding-top: 3vh;
-}
-    
-.logo{
-    width: 10%;   
+.footer div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  flex-direction: column;
+  padding-top: 3vh;
 }
 
-.cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.logo {
+  width: 10%;
 }
 
-.foto{
-    height: 42vh;
+.cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 400px 400px 400px;
+  margin-left: 4.5rem;
+}
+
+.foto {
+  height: 42vh;
 }
 
 /* .carousel {
@@ -50,6 +49,3 @@
     align-items: center;
     flex-direction: column;
 } */
-
-
-
