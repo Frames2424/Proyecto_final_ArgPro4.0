@@ -15,200 +15,205 @@
     <link rel="stylesheet" href="./contacto.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="container-fluid p-0 m-0">
+  <body class="container-fluid" style="padding-left: 0; padding-right: 0">
     <!-- Navbar -->
 
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">SportBike</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">SportBike</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul
-              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-              style="--bs-scroll-height: 100px"
-            >
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Indumentaria
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Cascos</a></li>
-                  <li><a class="dropdown-item" href="#">Camperas</a></li>
-                  <li><a class="dropdown-item" href="#">Pantalones</a></li>
-                  <li><a class="dropdown-item" href="#">Botas</a></li>
-                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                </ul>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Indumentaria
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cascos</a></li>
+                <li><a class="dropdown-item" href="#">Camperas</a></li>
+                <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                <li><a class="dropdown-item" href="#">Botas</a></li>
+                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+              </ul>
+            </li>
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Motos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Street</a></li>
-                  <li><a class="dropdown-item" href="#">Sport</a></li>
-                  <li><a class="dropdown-item" href="#">Cross</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">125cc</a></li>
-                  <li><a class="dropdown-item" href="#">150cc</a></li>
-                  <li><a class="dropdown-item" href="#">200cc</a></li>
-                  <li><a class="dropdown-item" href="#">+ 200cc</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Ayuda</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar..."
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-      <!--preguntas frec-->
-      <h1>Ayuda - Preguntas Frecuentes</h1>
-      <div class="preguntas">
-        <div class="pregEnvios">
-          <!-- ENVÍOS -->
-          <h2>Envíos</h2>
-          <h4>¿CUÁL ES EL COSTO DE ENVÍO?</h4>
-          <p>
-            El envío a cualquier localidad del país es gratis, si realizas una
-            compra superior a $ 42.000. En el caso de no alcanzar dicho monto,
-            el envío tendrá un costo (que se sumará al momento de realizar el
-            pago) el cual se calculará en función a los datos de envío
-            ingresados al finalizar el proceso de compra y la modalidad de
-            entrega elegida, ya sea a domicilio ó para retiro en sucursal del
-            correo.
-          </p>
-          <h4>¿CUÁNTO TARDA EN LLEGAR MI PEDIDO?</h4>
-          <p>
-            Los envíos se entregan dentro de los 4 a 10 días hábiles en el
-            domicilio indicado por el comprador.
-          </p>
-          <h4>¿CÓMO SE REALIZAN LAS ENTREGAS?</h4>
-          <p>
-            Las entregas se realizan en cajas y bolsas cerradas a través de
-            correo OCA o Express Flex dependiendo tu dirección.
-          </p>
-        </div>
-
-        <div class="pregPago">
-          <!-- PAGO -->
-          <h2>Formas de pago</h2>
-          <h4>¿CUÁNTO TIEMPO TENGO PARA PAGAR MI PEDIDO?</h4>
-          <p>
-            Tenés hasta 72 hs. hábiles para realizar el pago de tu pedido. Una
-            vez confirmado el mismo, Mercado Pago nos notificará de la
-            transacción para darle curso al armado y envío.
-          </p>
-          <h4>¿CÓMO SÉ QUE MI PAGO FUE ACREDITADO?</h4>
-          <p>
-            Una vez que tu pago haya sido acreditado recibirás un correo de
-            www.ls2.com.ar con la confirmacíon del mismo, así como también un
-            correo que te enviará Mercado Pago informandote que la transacción
-            ha sido completada.
-          </p>
-          <h4>¿HACEN FACTURA A?</h4>
-          <p>
-            Por el momento para ventas online únicamente realizamos factura
-            consumidor final.
-          </p>
-        </div>
-
-        <div class="pregStock">
-          <!-- Consultas de stock -->
-          <h2>Consultas de Stock</h2>
-          <h4>¿HAY STOCK DE TODOS LOS PRODUCTOS?</h4>
-          <p>
-            Sí, todos los productos que publicamos están en stock. En caso de
-            agotarse algún talle o color, esa característica se bloqueará (se
-            verá grisada y no podrás seleccionarla).
-          </p>
-          <h4>COMPRÉ Y ME DIJERON QUE NO TIENEN STOCK, ¿QUÉ HAGO?</h4>
-          <p>
-            Esto es inusual, pero nuestro Centro de Atención al Cliente va a
-            contactarse con vos para brindarte una solución. Si querés, podés
-            comunicarte con nosotros escribiendo a ls2store@servicomglobal.com.
-            No olvides incluir tu número de pedido.
-          </p>
-          <h4>¿HAY ALGÚN LÍMITE DE COMPRA?</h4>
-          <p>
-            No. El único límite de compra que tenemos es el stock de nuestro
-            e-Shop.
-          </p>
-        </div>
-
-        <div class="pregDevol">
-          <!-- Devoluciones -->
-          <h2>Consultas de Stock</h2>
-          <h4>ALGO QUE COMPRÉ NO ME SATISFACE UN 100%, ¿PUEDO DEVOLVERLO?</h4>
-          <p>
-            Sí, podes pedir el reintegro del dinero de todo lo que compres en
-            www.ls2.com.ar siempre y cuando el producto no haya sido utilizado y
-            conserve todas las etiquetas y envoltorios originales. Para esto
-            tenes hasta 30 días (luego de haber recibido la compra) para
-            contactarte con nosotros y solicitarlo. De esta forma, vas a poder
-            realizar una nueva compra seleccionando el producto, color y talle
-            que desees.
-          </p>
-          <h4>¿CUÁNTO TIEMPO TENGO PARA HACER LA DEVOLUCIÓN?</h4>
-          <p>
-            Si el producto adquirido presenta las mismas condiciones en las que
-            fue recibido o comprado (etiqueta y envoltorio) contás hasta 30
-            (treinta) días consecutivos desde la recepción del producto para
-            solicitar la devolución del dinero.
-          </p>
-          <h4>¿REALIZAR UNA DEVOLUCIÓN TIENE COSTO?</h4>
-          <p>
-            Los costos de la logística para la devolución corren a cuenta de
-            LS2.
-          </p>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Motos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Street</a></li>
+                <li><a class="dropdown-item" href="#">Sport</a></li>
+                <li><a class="dropdown-item" href="#">Cross</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">125cc</a></li>
+                <li><a class="dropdown-item" href="#">150cc</a></li>
+                <li><a class="dropdown-item" href="#">200cc</a></li>
+                <li><a class="dropdown-item" href="#">+ 200cc</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Ayuda</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
         </div>
       </div>
-      <!--formulario-->
-      <div class="content bg-dark">
-        <div class="contact-wrapper animated bounceInUp">
-          <div class="contact-form">
-            <h3>Contactanos</h3>
-            <form action="">
+    </nav>
+
+    <!--preguntas frec-->
+    <div class="preguntas">
+      <h1><strong>Ayuda - Preguntas Frecuentes</strong></h1>
+      <div class="pregEnvios">
+        <!-- ENVÍOS -->
+        <h2>Envíos</h2>
+        <h4><strong>¿CUÁL ES EL COSTO DE ENVÍO?</strong></h4>
+        <p>
+          El envío a cualquier localidad del país es gratis, si realizas una
+          compra superior a $ 42.000. En el caso de no alcanzar dicho monto, el
+          envío tendrá un costo (que se sumará al momento de realizar el pago)
+          el cual se calculará en función a los datos de envío ingresados al
+          finalizar el proceso de compra y la modalidad de entrega elegida, ya
+          sea a domicilio ó para retiro en sucursal del correo.
+        </p>
+        <h4><strong>¿CUÁNTO TARDA EN LLEGAR MI PEDIDO?</strong></h4>
+        <p>
+          Los envíos se entregan dentro de los 4 a 10 días hábiles en el
+          domicilio indicado por el comprador.
+        </p>
+        <h4><strong>¿CÓMO SE REALIZAN LAS ENTREGAS?</strong></h4>
+        <p>
+          Las entregas se realizan en cajas y bolsas cerradas a través de correo
+          OCA o Express Flex dependiendo tu dirección.
+        </p>
+      </div>
+
+      <div class="pregPago">
+        <!-- PAGO -->
+        <h2>Formas de pago</h2>
+        <h4><strong>¿CUÁNTO TIEMPO TENGO PARA PAGAR MI PEDIDO?</strong></h4>
+        <p>
+          Tenés hasta 72 hs. hábiles para realizar el pago de tu pedido. Una vez
+          confirmado el mismo, Mercado Pago nos notificará de la transacción
+          para darle curso al armado y envío.
+        </p>
+        <h4><strong>¿CÓMO SÉ QUE MI PAGO FUE ACREDITADO?</strong></h4>
+        <p>
+          Una vez que tu pago haya sido acreditado recibirás un correo de
+          www.ls2.com.ar con la confirmacíon del mismo, así como también un
+          correo que te enviará Mercado Pago informandote que la transacción ha
+          sido completada.
+        </p>
+        <h4><strong>¿HACEN FACTURA A?</strong></h4>
+        <p>
+          Por el momento para ventas online únicamente realizamos factura
+          consumidor final.
+        </p>
+      </div>
+
+      <div class="pregStock">
+        <!-- Consultas de stock -->
+        <h2>Consultas de Stock</h2>
+        <h4><strong>¿HAY STOCK DE TODOS LOS PRODUCTOS?</strong></h4>
+        <p>
+          Sí, todos los productos que publicamos están en stock. En caso de
+          agotarse algún talle o color, esa característica se bloqueará (se verá
+          grisada y no podrás seleccionarla).
+        </p>
+        <h4>
+          <strong>COMPRÉ Y ME DIJERON QUE NO TIENEN STOCK, ¿QUÉ HAGO?</strong>
+        </h4>
+        <p>
+          Esto es inusual, pero nuestro Centro de Atención al Cliente va a
+          contactarse con vos para brindarte una solución. Si querés, podés
+          comunicarte con nosotros escribiendo a ls2store@servicomglobal.com. No
+          olvides incluir tu número de pedido.
+        </p>
+        <h4><strong>¿HAY ALGÚN LÍMITE DE COMPRA?</strong></h4>
+        <p>
+          No. El único límite de compra que tenemos es el stock de nuestro
+          e-Shop.
+        </p>
+      </div>
+
+      <div class="pregDevol">
+        <!-- Devoluciones -->
+        <h2>Consultas de Stock</h2>
+        <h4>
+          <strong
+            >ALGO QUE COMPRÉ NO ME SATISFACE UN 100%, ¿PUEDO DEVOLVERLO?</strong
+          >
+        </h4>
+        <p>
+          Sí, podes pedir el reintegro del dinero de todo lo que compres en
+          www.ls2.com.ar siempre y cuando el producto no haya sido utilizado y
+          conserve todas las etiquetas y envoltorios originales. Para esto tenes
+          hasta 30 días (luego de haber recibido la compra) para contactarte con
+          nosotros y solicitarlo. De esta forma, vas a poder realizar una nueva
+          compra seleccionando el producto, color y talle que desees.
+        </p>
+        <h4>
+          <strong>¿CUÁNTO TIEMPO TENGO PARA HACER LA DEVOLUCIÓN?</strong>
+        </h4>
+        <p>
+          Si el producto adquirido presenta las mismas condiciones en las que
+          fue recibido o comprado (etiqueta y envoltorio) contás hasta 30
+          (treinta) días consecutivos desde la recepción del producto para
+          solicitar la devolución del dinero.
+        </p>
+        <h4><strong>¿REALIZAR UNA DEVOLUCIÓN TIENE COSTO?</strong></h4>
+        <p>
+          Los costos de la logística para la devolución corren a cuenta de LS2.
+        </p>
+      </div>
+    </div>
+    <!--formulario-->
+    <div class="content bg-dark">
+      <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+          <h3>¿Seguís teniendo dudas? Mandanos un mensaje!</h3>
+          <form action="">
+            <div>
               <p>
                 <label>Nombre </label>
                 <input type="text" name="fullname" />
@@ -231,8 +236,8 @@
                   required
                 />
               </p>
-
-              <br />
+            </div>
+            <div class="der">
               <p class="block">
                 <label>Mensaje</label>
                 <textarea name="message" rows="3"></textarea>
@@ -241,42 +246,49 @@
               <p class="block">
                 <button>ENVIAR</button>
               </p>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
-      </div>
-
-      <!-- footer -->
-      <div class="footer bg-dark">
-        <div class="footerText">
-          <p>+54 351 6846532</p>
-          <p>motozombie@gmail.com</p>
-          <p>Paraná 6543, Córdoba Capital</p>
-        </div>
-
-        <div class="tarjetas">
-          <img src="./img/tarj.png" alt="tarjetas" />
-          <img src="./img/tarj.png" alt="tarjetas" />
-        </div>
-
-        <div class="redes">
-          <a
-            href="https://github.com/Frames2424/Proyecto_final_ArgPro4.0"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="./img/icon-github.png" alt="git"
-          /></a>
-          <img src="./img/icon-instagram.png" alt="ig" />
-          <img src="./img/icon-linkedin.png" alt="linkd" />
-          <img src="./img/icon-wpp.png" alt="wpp" />
-        </div>
-        <img
-          class="logoFoot"
-          src="https://sublistamp.com/13674-medium_default/camiseta-de-zombie-en-moto.jpg"
-          alt="logoFoot"
-        />
       </div>
     </div>
+
+    <!-- footer -->
+    <footer class="footer bg-dark">
+      <div class="footerInfo">
+        <div class="footerArriba">
+          <div class="footerText">
+            <p>+54 351 6846532</p>
+            <p>motozombie@gmail.com</p>
+            <p>Paraná 6543, Córdoba Capital</p>
+          </div>
+
+          <div class="tarjetas">
+            <img src="./img/tarj.png" alt="tarjetas" />
+            <img src="./img/tarj.png" alt="tarjetas" />
+          </div>
+
+          <div class="redes">
+            <a
+              href="https://github.com/Frames2424/Proyecto_final_ArgPro4.0"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./img/icon-github.png" alt="git"
+            /></a>
+            <img src="./img/icon-instagram.png" alt="ig" />
+            <img src="./img/icon-linkedin.png" alt="linkd" />
+            <img src="./img/icon-wpp.png" alt="wpp" />
+          </div>
+          <div class="logoFootDiv">
+            <img
+              class="logoFoot"
+              src="https://sublistamp.com/13674-medium_default/camiseta-de-zombie-en-moto.jpg"
+              alt="logoFoot"
+            />
+          </div>
+        </div>
+        <p style="font-size: 1.2vh">@Proyecto Final Argentina Programa 4.0</p>
+      </div>
+    </footer>
 
     <script src="./javascript.js"></script>
     <!-- Bootstrap -->

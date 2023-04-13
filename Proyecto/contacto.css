@@ -21,14 +21,21 @@ ul {
   padding: 1em;
 }
 
+.contact-form h3 {
+  color: rgb(228, 228, 228);
+}
+
 .contact-form form {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 94.7vw;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-form form label {
   display: block;
-  color: white;
+  color: rgb(228, 228, 228);
 }
 
 .contact-form form p {
@@ -48,7 +55,7 @@ ul {
   border: none;
   background: none;
   outline: 0;
-  color: #fff;
+  color: rgb(228, 228, 228);
   border-bottom: 1px solid #d63031;
 }
 
@@ -62,7 +69,7 @@ ul {
 .contact-form form button:hover,
 .contact-form form button:focus {
   background: #d63031;
-  color: #fff;
+  color: rgb(228, 228, 228);
   transition: background-color 1s ease-out;
   outline: 0;
 }
@@ -77,6 +84,28 @@ ul {
 .contact-info p {
   text-align: center;
   margin: 0 0 1rem 0;
+}
+
+.der textarea {
+  height: 25vh;
+}
+
+.preguntas {
+  padding: 2vw 6vw 0 6vw;
+  margin-bottom: 5vh;
+  color: rgb(228, 228, 228);
+}
+
+.preguntas h1 {
+  font-size: 3.5vw;
+}
+
+.preguntas h4 {
+  color: #b70e21;
+}
+
+.preguntas h2 {
+  padding: 3vw 1vw 0 1vw; /* arriba, derecha, abajo, izquierda */
 }
 
 /* LARGE SIZE */

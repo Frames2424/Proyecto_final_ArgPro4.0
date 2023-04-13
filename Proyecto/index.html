@@ -14,13 +14,13 @@
     <link rel="icon" href="./img/rueda.ico" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="container-fluid p-0 m-0">
+  <body class="container-fluid" style="padding-left: 0; padding-right: 0">
     <!-- Navbar -->
 
-    <div class="container-fluid">
+    <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">SportBike</a>
+          <a class="navbar-brand" href="./index.html">SportBike</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -149,81 +149,45 @@
       </div>
 
       <!-- cards -->
-      <div class="cards row" id="cards"></div>
-
-      <!--formulario-->
-      <div class="content bg-dark">
-        <div class="contact-wrapper animated bounceInUp">
-          <div class="contact-form">
-            <h3>Contactanos</h3>
-            <form action="">
-              <p>
-                <label>Nombre </label>
-                <input type="text" name="fullname" />
-              </p>
-              <p>
-                <label>Apellido</label>
-                <input type="text" name="affair" />
-              </p>
-              <p>
-                <label>Email</label>
-                <input type="email" name="email" />
-              </p>
-              <p>
-                <label>Numero de Telefono</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
-                  required
-                />
-              </p>
-
-              <br />
-              <p class="block">
-                <label>Mensaje</label>
-                <textarea name="message" rows="3"></textarea>
-              </p>
-
-              <p class="block">
-                <button>ENVIAR</button>
-              </p>
-            </form>
-          </div>
-        </div>
-      </div>
+      <div class="cards row" style="margin: 0" id="cards"></div>
 
       <!-- footer -->
-      <div class="footer bg-dark">
-        <div class="footerText">
-          <p>+54 351 6846532</p>
-          <p>motozombie@gmail.com</p>
-          <p>Paraná 6543, Córdoba Capital</p>
-        </div>
+      <footer class="footer bg-dark">
+        <div class="footerInfo">
+          <div class="footerArriba">
+            <div class="footerText">
+              <p>+54 351 6846532</p>
+              <p>motozombie@gmail.com</p>
+              <p>Paraná 6543, Córdoba Capital</p>
+            </div>
 
-        <div class="tarjetas">
-          <img src="./img/tarj.png" alt="tarjetas" />
-          <img src="./img/tarj.png" alt="tarjetas" />
-        </div>
+            <div class="tarjetas">
+              <img src="./img/tarj.png" alt="tarjetas" />
+              <img src="./img/tarj.png" alt="tarjetas" />
+            </div>
 
-        <div class="redes">
-          <a
-            href="https://github.com/Frames2424/Proyecto_final_ArgPro4.0"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="./img/icon-github.png" alt="git"
-          /></a>
-          <img src="./img/icon-instagram.png" alt="ig" />
-          <img src="./img/icon-linkedin.png" alt="linkd" />
-          <img src="./img/icon-wpp.png" alt="wpp" />
+            <div class="redes">
+              <a
+                href="https://github.com/Frames2424/Proyecto_final_ArgPro4.0"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./img/icon-github.png" alt="git"
+              /></a>
+              <img src="./img/icon-instagram.png" alt="ig" />
+              <img src="./img/icon-linkedin.png" alt="linkd" />
+              <img src="./img/icon-wpp.png" alt="wpp" />
+            </div>
+            <div class="logoFootDiv">
+              <img
+                class="logoFoot"
+                src="https://sublistamp.com/13674-medium_default/camiseta-de-zombie-en-moto.jpg"
+                alt="logoFoot"
+              />
+            </div>
+          </div>
+          <p style="font-size: 1.2vh">@Proyecto Final Argentina Programa 4.0</p>
         </div>
-        <img
-          class="logoFoot"
-          src="https://sublistamp.com/13674-medium_default/camiseta-de-zombie-en-moto.jpg"
-          alt="logoFoot"
-        />
-      </div>
+      </footer>
     </div>
 
     <script src="./javascript.js"></script>
