@@ -43,7 +43,7 @@ body {
   margin-bottom: 2vh;
   background-color: white;
   width: 15vw;
-  height: 55vh;
+  height: 65vh;
 }
 
 .card-body {
@@ -53,10 +53,14 @@ body {
 }
 
 .foto {
-  height: 100%;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.foto img {
+  position: absolute;
 }
 
 /* **************** footer **************** */
