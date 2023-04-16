@@ -33,5 +33,4 @@ const cargaProductos = async () => {
     console.log(error);
   }
 };
-
 cargaProductos();
