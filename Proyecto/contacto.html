@@ -212,27 +212,63 @@
       <div class="contact-wrapper animated bounceInUp">
         <div class="contact-form">
           <h3>¿Seguís teniendo dudas? Mandanos un mensaje!</h3>
-          <form action="">
+          <form
+            action="https://formsubmit.co/joacodileo@gmail.com"
+            method="POST"
+            netlify
+          >
+            <!-- <input type="hidden" name="_captcha" value="false" /> -->
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/Proyecto/contacto.html"
+            /><input
+              type="hidden"
+              name="_autoresponse"
+              value="Gracias por contactarnos! Le dejamos una copia de su consulta"
+            />
             <div>
               <p>
-                <label>Nombre </label>
-                <input type="text" name="fullname" />
+                <label>Nombre completo</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ingrese su nombre..."
+                  title="Nombre solo acepta letras y espacios en blanco."
+                  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
+                  required
+                />
               </p>
-              <p>
+              <!-- <p>
                 <label>Apellido</label>
-                <input type="text" name="affair" />
-              </p>
+                <input
+                  type="text"
+                  name="affair"
+                  placeholder="Ingrese su apellido..."
+                  title="Apellido solo acepta letras y espacios en blanco."
+                  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
+                  required
+                />
+              </p> -->
               <p>
                 <label>Email</label>
-                <input type="email" name="email" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Ingrese su email..."
+                  title="Email incorrecto."
+                  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                  required
+                />
               </p>
               <p>
                 <label>Numero de Telefono</label>
                 <input
                   type="tel"
+                  placeholder="Ingrese su celular o teléfono de contacto..."
                   id="phone"
                   name="phone"
-                  pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
+                  pattern="[0-9]{10}"
                   required
                 />
               </p>
@@ -240,11 +276,26 @@
             <div class="der">
               <p class="block">
                 <label>Mensaje</label>
-                <textarea name="message" rows="3"></textarea>
+                <textarea
+                  name="message"
+                  rows="3"
+                  placeholder="Déjanos un mensaje!"
+                  required
+                ></textarea>
               </p>
-
+              <p class="aclaracion">
+                Luego de presionar "ENVIAR" se le llevará a un CAPTCHA para
+                confirmar que es una persona. Luego se le redirigirá a esta
+                página y recibirá un mail con una copia de su consulta!
+              </p>
               <p class="block">
-                <button>ENVIAR</button>
+                <button
+                  type="submit"
+                  data-section="contacto"
+                  data-value="btn-enviar"
+                >
+                  ENVIAR
+                </button>
               </p>
             </div>
           </form>

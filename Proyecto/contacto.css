@@ -87,7 +87,7 @@ ul {
 }
 
 .der textarea {
-  height: 25vh;
+  height: 15vh;
 }
 
 .preguntas {
@@ -106,6 +106,11 @@ ul {
 
 .preguntas h2 {
   padding: 3vw 1vw 0 1vw; /* arriba, derecha, abajo, izquierda */
+}
+
+.aclaracion {
+  font-size: small;
+  color: white;
 }
 
 /* LARGE SIZE */
