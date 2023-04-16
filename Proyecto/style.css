@@ -36,6 +36,18 @@ body {
   margin-left: 4.5rem;
 }
 
+/* **************** card **************** */
+.card {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 /* **************** footer **************** */
 .footer {
   color: white;

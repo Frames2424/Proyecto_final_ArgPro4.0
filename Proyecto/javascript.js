@@ -1,35 +1,38 @@
 const cargaProductos = async () => {
-    try {    
-    const response = await fetch(`https://argprog4-default-rtdb.firebaseio.com/.json`)
-   
-   if(response.status === 200){
-        const datos = await response.json()  
-        console.log(datos);
-    
-        let productos = "";
-        datos.forEach(prod => { 
-            productos += `
-            <div class="card col-4" style="width: 18rem;">
-            <div class="foto">
-                <img src="${prod.img}" class="card-img-top" alt="tornado">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">${prod.nombre}</h5>
-                    <h6 class="card-title">$${prod.precio}</h6>
-                    <p class="card-text">Tipo: ${prod.tipo}</p>
-                    <a href="#" class="btn btn-primary">Comprar!</a>
+  try {
+    const response = await fetch(
+      `https://argprog4-default-rtdb.firebaseio.com/.json`
+    );
+
+    if (response.status === 200) {
+      const datos = await response.json();
+      console.log(datos);
+
+      let productos = "";
+      datos.forEach((prod) => {
+        productos += `
+            <div class="card" style="width: 18rem;">
+                <div class="foto">
+                    <img src="${prod.img}" class="card-img-top" alt="tornado">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">${prod.nombre}</h5>
+                        <h6 class="card-title">$${prod.precio}</h6>
+                        <p class="card-text">Tipo: ${prod.tipo}</p>
+                        <a href="#" class="btn btn-primary">Comprar!</a>
+                    </div>       
                 </div>       
             </div>       
-            `
-        })
+            `;
+      });
 
-        document.getElementById("cards").innerHTML = productos;
-   } else{
-            console.log("esta mal algoi");
-        }
-    } catch (error) {
-        console.log(error);
-}   
-}
+      document.getElementById("cards").innerHTML = productos;
+    } else {
+      console.log("esta mal algoi");
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
 
-cargaProductos()
+cargaProductos();
