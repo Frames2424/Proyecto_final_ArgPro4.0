@@ -11,18 +11,17 @@ const cargaProductos = async () => {
       let productos = "";
       datos.forEach((prod) => {
         productos += `
-            <div class="card" style="width: 18rem;">
+            <div class="card" >
                 <div class="foto">
-                    <img src="${prod.img}" class="card-img-top" alt="tornado">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">${prod.nombre}</h5>
-                        <h6 class="card-title">$${prod.precio}</h6>
-                        <p class="card-text">Tipo: ${prod.tipo}</p>
-                        <a href="#" class="btn btn-primary">Comprar!</a>
-                    </div>       
-                </div>       
-            </div>       
+                    <img src="${prod.img}" class="card-img" alt="tornado">
+                </div>
+                  <div class="card-body">
+                    <h5 class="card-title">${prod.nombre}</h5>
+                    <h6 class="card-title">$${prod.precio}</h6>
+                    <p class="card-text">Tipo: ${prod.tipo}</p>
+                    <a href="#" class="btn btn-primary">Comprar!</a>
+                  </div>       
+            </div>   
             `;
       });
 

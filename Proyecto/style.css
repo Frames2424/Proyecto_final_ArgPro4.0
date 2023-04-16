@@ -29,23 +29,34 @@ body {
   height: 100%;
 }
 
+/* **************** card **************** */
+
 .cards {
   display: grid;
-  justify-content: center;
-  grid-template-columns: 400px 400px 400px;
-  margin-left: 4.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(3, 15vw);
 }
 
-/* **************** card **************** */
 .card {
   margin-top: 2vh;
   margin-bottom: 2vh;
+  background-color: white;
+  width: 15vw;
+  height: 55vh;
 }
 
 .card-body {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+}
+
+.foto {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* **************** footer **************** */
