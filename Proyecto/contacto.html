@@ -217,7 +217,11 @@
             method="POST"
             netlify
           >
-            <!-- <input type="hidden" name="_captcha" value="false" /> -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="Consulta a MotoZombie"
+            />
             <input
               type="hidden"
               name="_next"
@@ -262,7 +266,7 @@
                 />
               </p>
               <p>
-                <label>Numero de Telefono</label>
+                <label>Numero de Telefono (ej: 3516863859)</label>
                 <input
                   type="tel"
                   placeholder="Ingrese su celular o teléfono de contacto..."
@@ -287,6 +291,7 @@
                 Luego de presionar "ENVIAR" se le llevará a un CAPTCHA para
                 confirmar que es una persona. Luego se le redirigirá a esta
                 página y recibirá un mail con una copia de su consulta!
+                (Verifique su casilla de SPAM)
               </p>
               <p class="block">
                 <button
