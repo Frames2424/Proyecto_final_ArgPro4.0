@@ -42,7 +42,6 @@ form.addEventListener("submit", (event) => {
   for (let i = 0; i < pagoCheckboxes.length; i++) {
     pago.push(pagoCheckboxes[i].value);
   }
-  /* let comentarios = form.comentarios.value; */
 
   let textoComentario = `${name} con correo: ${email} y teléfono: ${phone}, residiendo
   actualmente en ${pais}-${ciud} (CP:${cp}) escogió comprar "${producto}" con 
@@ -50,4 +49,32 @@ form.addEventListener("submit", (event) => {
 
   comentario.textContent = textoComentario;
   form.reset();
+
+  // Prepara la ventana de impresión
+  const printWindow = window.open("", "", "height=400,width=800");
+
+  // Crea el contenido HTML que quieres imprimir
+  let content = `
+    <html>
+      <head>
+        <title>Compra</title>
+      </head>
+      <body>
+        <h1>Compra</h1>
+        <p>${textoComentario}</p>
+      </body>
+    </html>
+  `;
+
+  // Agrega el contenido al documento de la ventana de impresión
+  printWindow.document.write(content);
+
+  // Espera a que el contenido se cargue completamente antes de imprimirlo
+  printWindow.document.addEventListener("DOMContentLoaded", () => {
+    printWindow.print();
+    printWindow.close();
+  });
 });
+function imprimir() {
+  window.print();
+}

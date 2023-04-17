@@ -97,7 +97,7 @@
       <div class="content bg-dark">
         <div class="contact-wrapper animated bounceInUp">
           <div class="contact-form">
-            <form>
+            <form id="my-form">
               <div>
                 <p>
                   <label for="name">Nombre completo</label>
@@ -213,8 +213,15 @@
                     />
                   </label>
                 </div>
+                <p class="aclaracion">
+                  Luego de presionar "ENVIAR" aparecerá una ventana para
+                  imprimir o guardar el PDF de su solicitud de envío. Posterior
+                  a guardar/imprimir este recibo, abajo aparecerán también sus
+                  datos rellenados para verificar que su archivo se haya
+                  guardado correctoamente.
+                </p>
                 <p class="block">
-                  <button type="submit">ENVIAR</button>
+                  <button type="submit" onclick="imprimir()">ENVIAR</button>
                 </p>
               </div>
             </form>
