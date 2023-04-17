@@ -33,3 +33,25 @@ h1{
 .zoom:hover {
     transform: scale(1.2);
   }
+
+  .grey{
+    background-color: darkgrey;
+    padding: 2vh;
+
+}
+.grey_2{
+    
+    background-color: grey;
+    padding: 2vh;
+}
+.grey_2:hover{
+    color: red;
+}
+
+.fichacol1 {
+    background-color: #c0c0c0;
+
+}
+.fichacol2{
+    background-color: #c0c0c0;
+}

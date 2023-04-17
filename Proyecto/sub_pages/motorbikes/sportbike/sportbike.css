@@ -20,13 +20,24 @@ h1{
     color: #43fc0c;
 }
 .fichacol1 {
-    background-color: grey;
+    background-color: #c0c0c0;
+
 }
 .fichacol2{
-    background-color: lightgrey;
+    background-color: #c0c0c0;
 }
 .grey{
     background-color: darkgrey;
+    padding: 2vh;
+
+}
+.grey_2{
+    
+    background-color: grey;
+    padding: 2vh;
+}
+.grey_2:hover{
+    color: #43fc0c;
 }
 .ficha_text{
 
@@ -37,6 +48,7 @@ h1{
     font-style: oblique;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 /* .zoom:hover {
     transform: scale(1.2);
