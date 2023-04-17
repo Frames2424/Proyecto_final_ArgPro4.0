@@ -20,7 +20,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/Proyecto/index.html">SportBike</a>
+        <a class="navbar-brand" href="/Proyecto/index.html">MotoZombie</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -82,43 +82,29 @@
             <li class="nav-item">
               <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <div class="preguntas">
-      <h1><strong>Formulario de Cotización</strong></h1>
+      <h1><strong>Formulario de Envío</strong></h1>
 
       <!--formulario-->
       <div class="content bg-dark">
         <div class="contact-wrapper animated bounceInUp">
           <div class="contact-form">
-            <form
-              action="https://formsubmit.co/joacodileo@gmail.com"
-              method="POST"
-              netlify
-            >
-              <input
-                type="hidden"
-                name="_subject"
-                value="Consulta a MotoZombie"
-              />
-              <input
-                type="hidden"
-                name="_next"
-                value="http://127.0.0.1:5500/Proyecto/contacto.html"
-              /><input
-                type="hidden"
-                name="_autoresponse"
-                value="Gracias por contactarnos! Le dejamos una copia de su consulta"
-              />
+            <form>
               <div>
                 <p>
-                  <label>Nombre completo</label>
+                  <label for="name">Nombre completo</label>
                   <input
                     type="text"
                     name="name"
+                    id="name"
                     placeholder="Ingrese su nombre..."
                     title="Nombre solo acepta letras y espacios en blanco."
                     pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$"
@@ -126,21 +112,23 @@
                   />
                 </p>
                 <p>
-                  <label>Email</label>
+                  <label for="email">Email</label>
                   <input
                     type="email"
                     name="email"
+                    id="email"
                     placeholder="Ingrese su email..."
                     title="Email incorrecto."
-                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     required
                   />
                 </p>
+
                 <p>
-                  <label>Numero de Telefono (ej: 3516863859)</label>
+                  <label for="phone">Celular (ej: 3516863859)</label>
                   <input
                     type="tel"
-                    placeholder="Ingrese su celular o teléfono de contacto..."
+                    placeholder="Ingrese su número de contacto..."
                     id="phone"
                     name="phone"
                     pattern="[0-9]{10}"
@@ -148,9 +136,9 @@
                   />
                 </p>
                 <p>
-                  <label>País</label>
+                  <label for="pais">País</label>
                   <input
-                    type="pais"
+                    type="text"
                     placeholder="Ingrese su país de residencia..."
                     id="pais"
                     name="pais"
@@ -160,9 +148,9 @@
                   />
                 </p>
                 <p>
-                  <label>Ciudad</label>
+                  <label for="ciud">Ciudad</label>
                   <input
-                    type="ciud"
+                    type="text"
                     placeholder="Ingrese su ciudad de residencia..."
                     id="ciud"
                     name="ciud"
@@ -174,9 +162,9 @@
               </div>
               <div class="der">
                 <p>
-                  <label>Código Postal</label>
+                  <label for="cp">Código Postal</label>
                   <input
-                    type="cp"
+                    type="text"
                     placeholder="Ingrese su código postal..."
                     id="cp"
                     name="cp"
@@ -184,55 +172,54 @@
                     required
                   />
                 </p>
+                <div class="form-floating">
+                  <p>
+                    <label for="producto">Producto:</label>
+                    <br />
+                    <select
+                      id="producto"
+                      name="producto"
+                      class="form-select"
+                    ></select>
+                  </p>
+                </div>
                 <p><u>Método de pago:</u></p>
                 <div class="checkbox">
-                  <label>
+                  <label for="efectivo">
                     Efectivo
                     <input
-                      type="checkbox"
-                      name="efectivo"
-                      id="1"
-                      value="{Efectivo}"
+                      type="radio"
+                      name="pago"
+                      id="efectivo"
+                      value="Efectivo"
                     />
                   </label>
-                  <label>
+                  <label for="debito">
                     Débito
                     <input
-                      type="checkbox"
-                      name="debito"
-                      id="2"
-                      value="{Débito}"
+                      type="radio"
+                      name="pago"
+                      id="debito"
+                      value="Débito"
                     />
                   </label>
-                  <label>
+                  <label for="credito">
                     Crédito
                     <input
-                      type="checkbox"
-                      name="credito"
-                      id="3"
-                      value="{Credito}"
+                      type="radio"
+                      name="pago"
+                      id="credito"
+                      value="Crédito"
                     />
                   </label>
                 </div>
-                <p class="aclaracion">
-                  Luego de presionar "ENVIAR" se le llevará a un CAPTCHA para
-                  confirmar que es una persona. Luego se le redirigirá a esta
-                  página y recibirá un mail con una copia de su solicitud de
-                  cotización! (Verifique su casilla de SPAM). <br />Lo antes
-                  posible nos contactaremos con usted para coordinar la compra,
-                  gracias por confiar en MotoZombie!
-                </p>
                 <p class="block">
-                  <button
-                    type="submit"
-                    data-section="contacto"
-                    data-value="btn-enviar"
-                  >
-                    ENVIAR
-                  </button>
+                  <button type="submit">ENVIAR</button>
                 </p>
               </div>
             </form>
+
+            <div id="comentario"></div>
           </div>
         </div>
       </div>
@@ -276,7 +263,7 @@
       </div>
     </footer>
 
-    <script src="./javascript.js"></script>
+    <script src="./compra.js"></script>
     <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
