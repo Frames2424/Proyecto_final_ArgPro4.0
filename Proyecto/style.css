@@ -48,6 +48,7 @@ body {
   width: 15vw;
   height: 65vh;
   transition: 0.3s all;
+  border: none;
 }
 .card:hover {
   box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
