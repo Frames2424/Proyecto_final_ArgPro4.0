@@ -1,15 +1,23 @@
 h1{
-    color: red;
+    color: #43fc0c;
     font-size: 7vh;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
 }
-.phonda{
+
+/* .h2rtitle{
+
+    color: #43fc0c;
+} */
+.ph2r{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-style: oblique;
     font-weight: 100;
+}
 
+.ph2r:hover{
+    color: #43fc0c;
 }
 .fichacol1 {
     background-color: grey;
@@ -30,6 +38,6 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.zoom:hover {
+/* .zoom:hover {
     transform: scale(1.2);
-  }
+  } */
