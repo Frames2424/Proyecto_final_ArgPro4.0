@@ -28,7 +28,6 @@ ul {
 .contact-form form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 94.7vw;
   justify-content: center;
   align-items: center;
 }
@@ -87,7 +86,7 @@ ul {
 }
 
 .der {
-  width: 78%;
+  width: 100%;
 }
 
 .preguntas {
@@ -117,7 +116,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 36vw;
+  width: 100%;
 }
 
 .checkbox label {
