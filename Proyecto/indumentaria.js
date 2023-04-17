@@ -20,7 +20,7 @@ const cargaIndumentaria = async () => {
                         <h5 class="card-title">${prod.nombre}</h5>
                         <h6 class="card-title">$${prod.precio}</h6>
                         <p class="card-text">Tipo: ${prod.tipo}</p>
-                        <a href="#" class="btn btn-primary">Comprar!</a>
+                        <a href="./FormCompra.html" class="btn btn-primary">Comprar!</a>
                     </div>       
                 </div>   
                 `;
