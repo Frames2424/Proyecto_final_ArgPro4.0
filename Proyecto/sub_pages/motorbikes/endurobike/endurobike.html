@@ -73,8 +73,20 @@
                 Motos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/Proyecto/sub_pages/motorbikes/streetbike/streetbike.html">Street</a></li>
-                <li><a class="dropdown-item" href="/Proyecto/sub_pages/motorbikes/sportbike/sportbike.html">Sport</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/Proyecto/sub_pages/motorbikes/streetbike/streetbike.html"
+                    >Street</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/Proyecto/sub_pages/motorbikes/sportbike/sportbike.html"
+                    >Sport</a
+                  >
+                </li>
                 <li>
                   <a class="dropdown-item active" href="./endurobike.html"
                     >Cross</a
@@ -97,42 +109,39 @@
     <!-- Foto y presentación -->
     <div>
       <div>
-        <div class="row">
-          <div name="xr600" class="m-0 p-0 row justify-content-center">
+        <div class="container row">
+          <div class="col-6 m-0 order-1">
+            <h1 class="xrtitle">
+              Lo buenos nunca desaparece, conocé la nueva XR650L
+            </h1>
+            <p class="phonda">
+              En 1992 Honda lanzó una revolucionaria moto siendo una especie de
+              combinación de modelos anteriores, esta era y es actualmente la
+              Honda XR 650L. 26 años después, la 650L luce exactamente igual
+              solo con algunas modificaciones pequeñas. De este modo, la
+              legendaria 650 off-road de Honda ha sido catalogada varias veces
+              cómo la «mejor» moto en la categoría dual-sport.
+            </p>
+            <div class="col-6 order-2">
+              <iframe
+                class="video"
+                width="1150"
+                height="600"
+                src="https://www.youtube.com/embed/8r6eZMYY0y4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div name="xr600" class="fotoMotoCross col-6 m-0 order-1">
             <img
               class="m-auto p-0 zoom"
-              src="https://motoblog.com/wp-content/uploads/2023/02/image-61-1024x599.png"
-              alt="newXR6502023"
+              src="../../../img/cross.png"
+              alt="h2R"
             />
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container row">
-      <div class="col-6 m-0 order-1">
-        <h1 class="xrtitle">
-          Los buenos nunca desaparecen, vení a conocer la renovada XR650L 2023
-        </h1>
-        <p class="phonda">
-          En 1992 Honda lanzó una revolucionaria moto siendo una especie de
-          combinación de modelos anteriores, esta era y es actualmente la Honda
-          XR 650L. 26 años después, la 650L luce exactamente igual solo con
-          algunas modificaciones pequeñas. De este modo, la legendaria 650
-          off-road de Honda ha sido catalogada varias veces cómo la «mejor» moto
-          en la categoría dual-sport.
-        </p>
-        <div class="col-6 order-2">
-          <iframe
-            class=""
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/8r6eZMYY0y4"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
         </div>
       </div>
     </div>
@@ -141,35 +150,36 @@
     <div class="p-4 col-xl-12">
       <h2 class="d-flex justify-content-center ficha_text">FICHA TÉCNICA</h2>
       <div class="p-0 m-auto row">
-          <div class="m-0 p-0 col fichacol1">
-  
-              <P class="grey">TIPO DE MOTOR</P>
-              <P class="grey_2">CILINDRADA</P>
-              <P class="grey">POTENCIA MÁXIMA</P>
-              <P class="grey_2">SISTEMA DE ALIMENTACIÓN</P>
-              <P class="grey" >ENFRIAMIENTO</P>
-              <P class="grey_2">TRANSMISIÓN Y ARRANQUE</P>
-              <P class="grey" >CONSUMO DE GASOLINA</P>
-  
-  
-  
-          </div>
-          <div class="m-0 p-0  col fichacol2">
-              <P class="grey_2">4-stroke, monocylindre, DOHC, 4-valve</P>
-              <P class="grey">649cc</P>
-              <P class="grey_2">200 cv</P>
-              <P class="grey">Carburada</P>
-              <P class="grey_2">Líquido</P>
-              <p class="grey" >5 velocidades | Eléctrico y a patada</p>
-              <p class="grey_2">Mucha</p>
-  
-          </div>
-       </div>
-   </div>
+        <div class="m-0 p-0 col fichacol1">
+          <p class="grey">TIPO DE MOTOR</p>
+          <p class="grey_2">CILINDRADA</p>
+          <p class="grey">POTENCIA MÁXIMA</p>
+          <p class="grey_2">SISTEMA DE ALIMENTACIÓN</p>
+          <p class="grey">ENFRIAMIENTO</p>
+          <p class="grey_2">TRANSMISIÓN Y ARRANQUE</p>
+          <p class="grey">CONSUMO DE GASOLINA</p>
+        </div>
+        <div class="m-0 p-0 col fichacol2">
+          <p class="grey_2">4-stroke, monocylindre, DOHC, 4-valve</p>
+          <p class="grey">649cc</p>
+          <p class="grey_2">200 cv</p>
+          <p class="grey">Carburada</p>
+          <p class="grey_2">Líquido</p>
+          <p class="grey">5 velocidades | Eléctrico y a patada</p>
+          <p class="grey_2">Mucha</p>
+        </div>
+      </div>
+    </div>
 
     <!-- descargar  -->
     <div>
-      <a href="./XR650.pdf" download="xr650_manual" style="color: red;" class="container d-flex justify-content-center">Descargar manual en PDF</a>
+      <a
+        href="./XR650.pdf"
+        download="xr650_manual"
+        style="color: red"
+        class="container d-flex justify-content-center"
+        >Descargar manual en PDF</a
+      >
     </div>
 
     <!--formulario-->

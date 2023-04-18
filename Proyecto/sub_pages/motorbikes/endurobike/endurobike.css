@@ -1,61 +1,67 @@
-h1{
-    color: red;
-    font-size: 7vh;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
+h1 {
+  color: red;
+  font-size: 7vh;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
 }
-.phonda{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: oblique;
-    font-weight: 100;
-
+.phonda {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-style: oblique;
+  font-weight: 100;
 }
 
-.phonda:hover{
-    color: red;
+.phonda:hover {
+  color: red;
 }
 .fichacol1 {
-    background-color: grey;
+  background-color: grey;
 }
-.fichacol2{
-    background-color: lightgrey;
+.fichacol2 {
+  background-color: lightgrey;
 }
-.grey{
-    background-color: darkgrey;
+.grey {
+  background-color: darkgrey;
 }
-.ficha_text{
-
-    margin: 4vh 4vh;
-    padding: 0;
-    color: white;
-    font-size: 8vh;
-    font-style: oblique;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.ficha_text {
+  margin: 4vh 4vh;
+  padding: 0;
+  color: white;
+  font-size: 8vh;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* .zoom:hover {
     transform: scale(1.2);
   } */
 
-  .grey{
-    background-color: darkgrey;
-    padding: 2vh;
-
+.grey {
+  background-color: darkgrey;
+  padding: 2vh;
 }
-.grey_2{
-    
-    background-color: grey;
-    padding: 2vh;
+.grey_2 {
+  background-color: grey;
+  padding: 2vh;
 }
-.grey_2:hover{
-    color: red;
+.grey_2:hover {
+  color: red;
 }
 
 .fichacol1 {
-    background-color: #c0c0c0;
-
+  background-color: #c0c0c0;
 }
-.fichacol2{
-    background-color: #c0c0c0;
+.fichacol2 {
+  background-color: #c0c0c0;
+}
+
+.fotoMotoCross img {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  margin-top: 3rem;
 }

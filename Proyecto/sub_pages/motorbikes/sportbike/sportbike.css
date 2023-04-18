@@ -1,55 +1,61 @@
-h1{
-    color: #43fc0c;
-    font-size: 7vh;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
+h1 {
+  color: #43fc0c;
+  font-size: 7vh;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
 }
 
 /* .h2rtitle{
 
     color: #43fc0c;
 } */
-.ph2r{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: oblique;
-    font-weight: 100;
+.ph2r {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-style: oblique;
+  font-weight: 100;
 }
 
-.ph2r:hover{
-    color: #43fc0c;
+.ph2r:hover {
+  color: #43fc0c;
 }
 .fichacol1 {
-    background-color: #c0c0c0;
-
+  background-color: #c0c0c0;
 }
-.fichacol2{
-    background-color: #c0c0c0;
+.fichacol2 {
+  background-color: #c0c0c0;
 }
-.grey{
-    background-color: darkgrey;
-    padding: 2vh;
-
+.grey {
+  background-color: darkgrey;
+  padding: 2vh;
 }
-.grey_2{
-    
-    background-color: grey;
-    padding: 2vh;
+.grey_2 {
+  background-color: grey;
+  padding: 2vh;
 }
-.grey_2:hover{
-    color: #43fc0c;
+.grey_2:hover {
+  color: #43fc0c;
 }
-.ficha_text{
-
-    margin: 4vh 4vh;
-    padding: 0;
-    color: white;
-    font-size: 8vh;
-    font-style: oblique;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.ficha_text {
+  margin: 4vh 4vh;
+  padding: 0;
+  color: white;
+  font-size: 8vh;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 
 /* .zoom:hover {
     transform: scale(1.2);
   } */
+
+.fotoMoto img {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  margin-top: 3rem;
+}
